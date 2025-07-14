@@ -36,7 +36,7 @@ public class Resolution {
         listNode2.addNext(listNode3);
         listNode3.addNext(listNode4);
 
-        boolean result = isPalindromeOn(listNode1);
+        boolean result = isPalindromeEasy(listNode1);
 
         return result == true;
     }
