@@ -16,6 +16,18 @@ class Solution {
         return null;
     }
 
+    public static int[] twoSumForceBruteDiferent(int[] nums, int target) {
+        for(int i = 1; i < nums.length;i++){
+
+            for( int e = i; e < nums.length; e++){
+
+                if( nums[e] + nums[e-i] == target) return new int[]{e, e-i};
+            }
+
+        }
+        return null;
+    }
+
     public static int[] twoSumHashTable(int[] nums, int target){
         Map<Integer, Integer> table = new HashMap<>();
         int size = nums.length;
