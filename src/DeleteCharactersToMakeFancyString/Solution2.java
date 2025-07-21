@@ -5,29 +5,25 @@ public class Solution2 {
     public String makeFancyString(String s) {
         int sLength = s.length();
         StringBuilder newString = new StringBuilder();
-        int i = 0;
+        int sequence = 0;
 
-        while( i < sLength){
-            int j = i;
-            char currentChar = s.charAt(i);
+        for(int i = 0; i < sLength; i++){
+            char characterActual = s.charAt(i);
 
-            while( j < sLength && currentChar == s.charAt(j)){
-                j++;
-            }
-
-            if( j - i > 1 ){
-                newString.append(currentChar);
-                newString.append(currentChar);
+            if(i > 0 && characterActual == s.charAt(i-1) ){
+                if(sequence < 2){
+                    newString.append(characterActual);
+                    sequence++;
+                }
             } else {
-                newString.append(currentChar);
+                newString.append(characterActual);
+                sequence = 1;
             }
 
-            i = j;
+
 
         }
 
-        String correct = newString.toString();
-        return correct;
-
+        return newString.toString();
     }
 }
