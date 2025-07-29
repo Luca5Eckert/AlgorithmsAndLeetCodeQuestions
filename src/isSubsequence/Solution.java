@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Solution {
     public boolean isSubsequence(String s, String t) {
-        if(s == null || s.equals("")){
+        if(s == null || s.isEmpty()){
             return true;
         }
 
@@ -24,8 +24,13 @@ public class Solution {
             char characterNow = tableChars.get(l);
 
             if( character == characterNow){
-                sequence.append(character);
-                l++;
+                if(l <= s.length()){
+                    sequence.append(character);
+                    if( l < s.length()-1){
+                        l++;
+                    }
+                }
+
             }
         }
 
@@ -36,8 +41,8 @@ public class Solution {
     public static void main(String[] args) {
         Solution s = new Solution();
 
-        String nums1 = "aza";
-        String nums2 = "abzba";
+        String nums1 = "b";
+        String nums2 = "abc";
 
         System.out.println(s.isSubsequence(nums1, nums2));
 
