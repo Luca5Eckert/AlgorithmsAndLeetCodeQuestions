@@ -7,7 +7,7 @@ import java.util.Map;
 public class Solution {
     public boolean isSubsequence(String s, String t) {
         if(s == null || s.equals("")){
-            return false;
+            return true;
         }
 
         Map<Integer,Character> tableChars = new HashMap<>();
