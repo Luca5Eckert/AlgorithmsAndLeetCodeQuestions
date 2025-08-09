@@ -11,7 +11,7 @@ public class Resolution {
         List<Integer> list = new ArrayList<>();
 
         while(listNode != null){
-            list.add(listNode.valor);
+            list.add(listNode.val);
             listNode = listNode.next();
         }
 
@@ -36,9 +36,7 @@ public class Resolution {
         listNode2.addNext(listNode3);
         listNode3.addNext(listNode4);
 
-        boolean result = isPalindromeEasy(listNode1);
-
-        return result == true;
+        return isPalindromeEasy(listNode1);
     }
 
     public static void main(String[] args) {

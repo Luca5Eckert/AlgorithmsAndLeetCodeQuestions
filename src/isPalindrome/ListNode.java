@@ -1,23 +1,23 @@
 package isPalindrome;
 
 public class ListNode {
-    int valor;
-    ListNode listNode;
+    public int val;
+    public ListNode next;
 
     public ListNode(int valor ){
-        this.valor = valor;
+        this.val = valor;
     }
 
     public ListNode next(){
-        return listNode;
+        return next;
     }
 
     public boolean hasNext(){
-        return listNode != null;
+        return next != null;
     }
 
     public void addNext(ListNode listNode){
-        this.listNode = listNode;
+        this.next = listNode;
     }
 
 }
