@@ -2,19 +2,12 @@ package findTheIndexOfTheFirstOccurrenceInAString;
 
 class Solution {
     public int strStr(String haystack, String needle) {
-        int pointerWord = 0;
 
-        for(int i = 0; i < haystack.length(); i++){
-            char charWord = haystack.charAt(i);
+        for(int i = 0; i <= haystack.length()-needle.length(); i++){
+            String subString = haystack.substring(i, i + needle.length());
 
-            if(charWord == needle.charAt(pointerWord)){
-                pointerWord++;
-
-                if(pointerWord >= needle.length()){
-                    return i - pointerWord + 1;
-                }
-            } else {
-                pointerWord = 0;
+            if(needle.equals(subString)){
+                return i;
             }
 
         }
@@ -24,6 +17,8 @@ class Solution {
     public static void main(String[] args) {
         Solution s = new Solution();
 
-        s.strStr("sadbutsad", "sad");
+        int result = s.strStr("a", "a");
+
+        System.out.println(result);
     }
 }
