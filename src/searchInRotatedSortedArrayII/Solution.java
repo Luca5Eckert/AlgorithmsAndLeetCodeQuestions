@@ -10,7 +10,7 @@ class Solution {
 
             if(nums[mid] == target) return true;
 
-            if(nums[mid] <= target && nums[left] > target){
+            if(nums[mid] <= target || nums[left] > target){
                 right = mid - 1;
             } else {
                 left = mid + 1;
@@ -18,5 +18,11 @@ class Solution {
         }
         return false;
 
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.search(new int[]{1,0,1,1,1}, 0)
+);
     }
 }
