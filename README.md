@@ -1,5 +1,5 @@
 ## AlgorithmsAndLeetCodeQuestions
-Repository with Java solutions for LeetCode problems and algorithm implementations, organized under [src/leetcode](./src/leetcode) and [src/algoritmos](./src/algoritmos).
+Repository with Java solutions for LeetCode problems and algorithm implementations, organized under [solutions](./src/leetcode) and [algorithms](./src/algoritmos).
 ---
 ## Solutions
 001. Delete Characters to Make Fancy String — Java
