@@ -4,7 +4,7 @@ Repositório com soluções em Java para questões do LeetCode e implementaçõe
 
 ## Perfil
 
-- LeetCode: [Luca5Eckert](https://leetcode.com/u/Luca5Eckert/)
+- LeetCode: [LucasEckert](https://leetcode.com/u/LucasEckert/)
 
 ## Questões do LeetCode
 
