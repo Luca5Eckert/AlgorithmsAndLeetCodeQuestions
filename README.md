@@ -1,4 +1,4 @@
-# Algorithms and LeetCode Questions
+# Algoritmos e Questões do LeetCode
 
 Repositório com questões resolvidas do LeetCode e algoritmos implementados em Java.
 
