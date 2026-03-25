@@ -1,5 +1,5 @@
 ## AlgorithmsAndLeetCodeQuestions
-Repository containing Java solutions for LeetCode problems.
+Repository with Java solutions for LeetCode problems and algorithm implementations, organized under [src/leetcode](./src/leetcode) and [src/algoritmos](./src/algoritmos).
 ---
 ## Solutions
 001. Delete Characters to Make Fancy String — Java
@@ -80,5 +80,5 @@ Repository containing Java solutions for LeetCode problems.
 076. Word Pattern — Java
 ---
 ## About
-I am Luca Eckert.
-LeetCode profile: https://leetcode.com/Luca5Eckert/.
+I am Lucas Eckert.
+LeetCode profile: https://leetcode.com/u/LucasEckert/.
