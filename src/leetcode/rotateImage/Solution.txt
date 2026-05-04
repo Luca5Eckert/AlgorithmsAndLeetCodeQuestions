@@ -1,0 +1,16 @@
+class Solution {
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        int[][] matrix90 = new int[n][n];
+
+        for (int r = 0; r < n; r++) {
+            for (int c = 0; c < n; c++) {
+                matrix90[c][n - 1 - r] = matrix[r][c];
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.arraycopy(matrix90[i], 0, matrix[i], 0, n);
+        }
+    }
+}
